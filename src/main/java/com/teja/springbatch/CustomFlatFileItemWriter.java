@@ -4,7 +4,7 @@ import org.springframework.batch.item.file.FlatFileItemWriter;
 
 import java.util.List;
 
-public class CustomFlatFileItemWriter extends FlatFileItemWriter<CustomPojo>
+public class CustomFlatFileItemWriter<CustomPojo> extends FlatFileItemWriter<CustomPojo>
 {
     @Override
     public void write(List<? extends CustomPojo> arg0) throws Exception

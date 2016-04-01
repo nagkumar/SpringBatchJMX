@@ -2,7 +2,7 @@ package com.teja.springbatch;
 
 import org.springframework.batch.item.file.transform.DelimitedLineAggregator;
 
-public class CustomDelimitedAggregator extends DelimitedLineAggregator<CustomPojo>
+public class CustomDelimitedAggregator<CustomPojo> extends DelimitedLineAggregator<CustomPojo>
 {
     @Override
     public String doAggregate(Object[] fields)

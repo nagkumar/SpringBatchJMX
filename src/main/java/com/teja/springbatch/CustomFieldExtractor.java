@@ -2,7 +2,7 @@ package com.teja.springbatch;
 
 import org.springframework.batch.item.file.transform.BeanWrapperFieldExtractor;
 
-public class CustomFieldExtractor extends BeanWrapperFieldExtractor<CustomPojo>
+public class CustomFieldExtractor<CustomPojo> extends BeanWrapperFieldExtractor<CustomPojo>
 {
     @Override
     public Object[] extract(CustomPojo pojo)
